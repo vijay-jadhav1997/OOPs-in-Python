@@ -255,8 +255,24 @@ class Employee:
 ---
 
 ### **How Do We Inherit From Another Class in Python?**
+1. Simple Inheritance / single-base inheritance
+2. 
 
-- **_Inheritance_** is the process by which one class takes on the attributes and methods of another. Newly formed classes are called **child classes**, and the classes that we derive child classes from are called **parent classes**.
+- **Inheritance** is a powerful feature of **object-oriented programming**. 
+- It consists of creating hierarchical relationships between classes, where **child classes** inherit **attributes** and **methods** from their **parent class**. 
+- In Python, **one class** can have **multiple parents** or, more broadly, ancestors.
+- This is called **implementation inheritance**, which allows us to reduce duplication & repetition by code reuse. It can also make your code **more modular**, **better organized**, and **more scalable**. 
+- Inheritance is a great tool for **code reuse**. Subclasses will inherit and reuse functionality from their parent.
+- Parent classes typically provide **generic and common functionality** that we can **reuse** throughout **multiple child classes**. 
+- Child is the class that **inherits features and code** from Parent. 
+
+> Note: 
+> 1. Parent class == superclass == base class
+> 2. child class == derived class == subclass
+
+1. Simple Inheritance / single-base inheritance
+- When we have a class that inherits from a single parent class, then we’re using **single-base inheritance** or just **simple inheritance**. 
+- To make a Python class inherit from another, we need to list the parent class’s name in parentheses after the child class’s name in the definition.
 
 ```py
   class Parent:
@@ -276,7 +292,8 @@ class Employee:
 ```
 
 - Child classes can override or extend the attributes and methods of parent classes.
-  > In other words, child classes inherit all of the parent’s attributes and methods but can also specify attributes and methods that are unique to themselves.
+- In other words, child classes inherit all of the parent’s attributes and methods but can also specify attributes and methods that are unique to themselves.
+- The built-in `super()` function allows we to access members in the superclass, as its name suggests.
 
 ```py
   class Parent:
