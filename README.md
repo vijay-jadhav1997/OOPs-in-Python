@@ -313,4 +313,6 @@ class Employee:
   # Because child classes take on the attributes and methods of parent classes, Child.hair_color is also "black" without our explicitly defining that
 ```
 
-> All objects created from a child class are instances of the parent class,
+> All objects created from a child class are instances of the parent class.
+
+### 
